@@ -7,6 +7,12 @@
 (defn jena-memory-test-kb []
   (open (kb :jena-mem)))
 
+(defn jena-remote-test-kb []
+  (open
+   (edu.ucdenver.ccp.kr.sesame.kb/new-sesame-server
+    :server "http://dbpedia.org/sparql"
+    :repo-name "")))
+
 
 (defn add-namespaces [kb]
   (register-namespaces kb

@@ -4,6 +4,8 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/data.json "0.2.4"]
+                 [cheshire "5.6.1"]
+                 [clj-http "2.1.0"]
+                 [com.cemerick/url "0.1.1"]
                  [edu.ucdenver.ccp/kr-core "1.4.19"]
                  [edu.ucdenver.ccp/kr-jena-core "1.4.19"]])
