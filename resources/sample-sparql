@@ -1,0 +1,5 @@
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> 
+SELECT DISTINCT ?c ?lat ?long 
+WHERE {?c a yago:CapitalsInEurope. ?c geo:lat ?lat . ?c geo:long ?long} 
+ORDER BY ?c
